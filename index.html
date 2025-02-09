@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor Party</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Bachelor Party Bash</header>
+    <div class="container">
+        <div class="section" id="stay">
+            <h2>Where We're Staying</h2>
+            <p><a href="#" id="airbnbLink">Check out our Airbnb</a></p>
+        </div>
+        <div class="section" id="itinerary">
+            <h2>Itinerary</h2>
+            <ul id="itineraryList"></ul>
+            <button class="button" onclick="addItineraryItem()">Add Itinerary Item</button>
+        </div>
+        <div class="section" id="donations">
+            <h2>Buy the Groom a Drink</h2>
+            <p>Send some love via Venmo or PayPal!</p>
+            <button class="button" onclick="alert('Donation feature coming soon!')">Donate</button>
+        </div>
+        <div class="section" id="photos">
+            <h2>Photo Gallery</h2>
+            <input type="file" id="photoUpload" accept="image/*" onchange="previewPhoto(event)">
+            <div id="photoGallery"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
